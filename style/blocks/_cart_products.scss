@@ -15,12 +15,12 @@
 	display: flex;
 	position: relative;
 	margin-bottom: 40px;
-	transition: box-shadow 0.3s;
+	transition:  transform 0.3s;
 	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
 }
-// .cart_item:hover {
-// 	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
-// }
+.cart_item:hover {
+	transform: scale(1.1);
+}
 .close_icon {
 	@include btn_properties_reset();
 	position: absolute;
@@ -118,7 +118,7 @@
 	transition: 0.3s;
 }
 .cart_action_btn:hover {
-	animation: rotate_btn 0.9s normal;
+	// animation: rotate_btn 0.9s normal;
 	border-color: $main_style_color;
 	color: $main_style_color;
 }
